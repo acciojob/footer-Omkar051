@@ -1,9 +1,8 @@
-/* your code here */
 /* General footer styles */
 footer {
   background: #111;
   color: #fff;
-  padding: 40px 0 20px;
+  padding: 40px 20px 20px;
   font-family: Arial, sans-serif;
 }
 
@@ -21,7 +20,6 @@ footer .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
@@ -35,11 +33,11 @@ footer .media-icons a {
   margin-left: 15px;
 }
 
-/* Link boxes */
+/* Link boxes - row layout */
 footer .link-boxes {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
 footer .link-boxes .box {
@@ -62,7 +60,7 @@ footer .bottom-details {
   padding-top: 10px;
 }
 
-/* Responsive design */
+/* Responsive adjustments for small screens */
 @media (max-width: 768px) {
   footer .top {
     flex-direction: column;
@@ -74,10 +72,10 @@ footer .bottom-details {
   }
 
   footer .link-boxes {
-    flex-direction: column;
+    justify-content: space-around;
   }
 
   footer .link-boxes .box {
-    min-width: 100%;
+    min-width: 120px;
   }
 }
