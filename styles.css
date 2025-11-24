@@ -1,1 +1,83 @@
 /* your code here */
+/* General footer styles */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #f2f2f2;
+}
+
+/* Top section: logo + media icons */
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+footer .logo-details .logo_name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+footer .media-icons a {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+/* Link boxes */
+footer .link-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .link-boxes .box {
+  margin-bottom: 20px;
+  min-width: 150px;
+}
+
+footer .link-boxes .box h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Bottom details */
+footer .bottom-details {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  footer .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer .media-icons {
+    margin-top: 10px;
+  }
+
+  footer .link-boxes {
+    flex-direction: column;
+  }
+
+  footer .link-boxes .box {
+    min-width: 100%;
+  }
+}
